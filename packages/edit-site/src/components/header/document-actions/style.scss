@@ -21,18 +21,12 @@
 		margin: 0;
 	}
 
-	.edit-site-document-actions__title {
-		font-size: $default-font-size;
-		font-weight: bold;
-	}
-
 	.edit-site-document-actions__get-info {
 		// Add a bit of margin for better spacing with title when focused.
 		margin-left: $grid-unit-05;
 	}
 
 	.edit-site-document-actions__secondary-item {
-		font-size: $default-font-size;
 		opacity: 0;
 		transform: translateY(20px);
 		transition: transform 0.2s;
@@ -46,26 +40,12 @@
 
 		.edit-site-document-actions__title {
 			position: absolute;
-			color: $gray-900;
-			font-weight: bold;
-
-			&.is-secondary-title-active {
-				color: $gray-700;
-				font-weight: normal;
-			}
 		}
 
 		.edit-site-document-actions__secondary-item {
-			color: $gray-700;
-			font-weight: normal;
 			opacity: 1;
 			white-space: nowrap;
 			transform: translateY(12px);
-
-			&.is-secondary-title-active {
-				color: $gray-900;
-				font-weight: bold;
-			}
 		}
 	}
 }
