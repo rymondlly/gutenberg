@@ -92,7 +92,7 @@ class WP_Widget_Block extends WP_Widget {
 				class="content sync-input" hidden><?php echo esc_textarea( $instance['content'] ); ?></textarea>
 		<script>
 			(function() {
-				var link = "<?php echo esc_js( admin_url( 'themes.php?page=gutenberg-widgets' ) ); ?>";
+				var link = "<?php echo esc_js( GUTENBERG_WIDGETS_LINK ); ?>";
 				var container = jQuery('#<?php echo $textarea_id; ?>').closest(".form").find('.widget-control-actions .alignleft');
 				container.prepend(jQuery('<span> |</span>'));
 				container.prepend(jQuery('<a href="'+link+'" class="button-link">Edit</a>'));

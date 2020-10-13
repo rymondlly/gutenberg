@@ -16,6 +16,8 @@
 defined( 'GUTENBERG_DEVELOPMENT_MODE' ) or define( 'GUTENBERG_DEVELOPMENT_MODE', true );
 ### END AUTO-GENERATED DEFINES
 
+define( 'GUTENBERG_WIDGETS_LINK', admin_url( 'themes.php?page=gutenberg-widgets' ) );
+
 gutenberg_pre_init();
 
 /**
@@ -115,7 +117,7 @@ function modify_admin_bar( $wp_admin_bar ) {
 		$wp_admin_bar->add_menu(
 			array(
 				'id'   => 'widgets',
-				'href' => admin_url( 'themes.php?page=gutenberg-widgets' ),
+				'href' => GUTENBERG_WIDGETS_LINK,
 			)
 		);
 	}
